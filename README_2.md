@@ -18,16 +18,13 @@ O controle do carro deve responder aos comandos dos usuários por meio de botõe
 **Comandos de Entrada do Sistema**
 - Pedal de Acelerador
 - Pedal de Freio
-- Acionamento de Farol Baixo
-- Acionamento de Farol Alto
-- Acionamento de Setas (Equerda / Direita)
+- Acionamento de Farol
+- Acionamento da Seta Equerda  
+- Acionamento da Seta Direita  
 
 **Comandos do Controle de Velocidade**
 - SET (Configurar Velocidade)
 - CANCEL (Cancelar o controle de velocidade)
-- Vel + (Aumentar a velocidade + 1 km/h)
-- Vel - (Reduzir a velocidade - 1 km/h)
-
 
 ## 2. Componentes do Sistema
 
@@ -44,7 +41,7 @@ A Figura 1 ilustra os componentes do sistema:
 
 <p style="text-align: left;">Figura 1 - Diagrama esquemático de conexões entre módulos</p>
 
-![Figura](/figuras/Esquematico_Trabalho%202_Carro.jpg)
+![Figura](/figuras/Esquematico_Trabalho%202_Carro.png)
 
 <br>
 
@@ -74,7 +71,12 @@ Detalhes das conexões entre os módulos:
 | `Luz_Freio` - Luzes de Freio                      | 25 | OUT |  
 | `Luz_Seta_Esq` - Luz da seta esquerda             |  8 | OUT |  
 | `Luz_Seta_Dir` - Luz da seta direita              |  7 | OUT |  
-| `Luz_Temp_Motor` - Luz de alerta da temepratura do motor  | 12 | OUT |   
+| `Luz_Temp_Motor` - Luz de alerta da temepratura do motor  | 12 | OUT |  
+<!-- | `Comando_Farol` - Comando de ligar/desligar farol  | 12 | IN |  
+| `Comando_seta_esq` - Comando de ligar/desligar seta esquerda  | NN | IN |  
+| `Comando_seta_dir` - Comando de ligar/desligar seta direita  | NN | IN |  
+| `CC_RES` - Comando de Cruise Control  | NN | IN |  
+| `CC_CANCEL` - Comando de Cancelar Cruise Control  | NN | IN |   -->
 
 <br>
 <br>
@@ -88,7 +90,7 @@ Os sistema de controle possui os seguintes requisitos:
    1.1 O código deve ser desenvolvido em C;  
    1.2. Na implementação do software, não podem haver loops infinitos que ocupem 100% da CPU;  
 2. **Controle do Motor**:  
-   2.1 O sistema deve implementar o controle de velocidade do carro utilizando o [Controle PID](./Controle_PID.md) atuando sobre o Motor utilizando a técnica de PWM;  
+   2.1 O sistema deve implementar o controle de velocidade do carro utilizando controle ON/OFF simples atuando sobre o Motor utilizando a técnica de PWM;  
    2.2 Do mesmo modo, o freio do carro pode ser acionado via PWM;  
    2.3 A velocidade do carro pode ser controlada de dois modos:  
       - Pelo acionamento manual dos pedais de acelerador e freio;  
@@ -126,14 +128,14 @@ Os sistema de controle possui os seguintes requisitos:
 
 <!-- [Carro 1]()   -->
 
-## 6. Parâmetros de PID
+<!-- ## 6. Parâmetros de PID
 
 Para o uso do controle do PID, estão sendo sugeridos os seguintes valores para as constantes:
 - **Kp** = 0.5
 - **Ki** = 0.05
 - **Kd** = 40.0
 
-Porém, vocês estão livres para testar outros valores que sejam mais adequados.
+Porém, vocês estão livres para testar outros valores que sejam mais adequados. -->
 
 ### Acionamento do Motor 
 
