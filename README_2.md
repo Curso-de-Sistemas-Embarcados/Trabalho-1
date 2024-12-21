@@ -72,11 +72,11 @@ Detalhes das conexões entre os módulos:
 | `Luz_Seta_Esq` - Luz da seta esquerda             |  8 | OUT |  
 | `Luz_Seta_Dir` - Luz da seta direita              |  7 | OUT |  
 | `Luz_Temp_Motor` - Luz de alerta da temepratura do motor  | 12 | OUT |  
-<!-- | `Comando_Farol` - Comando de ligar/desligar farol  | 12 | IN |  
-| `Comando_seta_esq` - Comando de ligar/desligar seta esquerda  | NN | IN |  
-| `Comando_seta_dir` - Comando de ligar/desligar seta direita  | NN | IN |  
-| `CC_RES` - Comando de Cruise Control  | NN | IN |  
-| `CC_CANCEL` - Comando de Cancelar Cruise Control  | NN | IN |   -->
+| `Comando_Farol` - Comando de ligar/desligar farol  | 16 | IN |  
+| `Comando_seta_esq` - Comando de ligar/desligar seta esquerda  | 20 | IN |  
+| `Comando_seta_dir` - Comando de ligar/desligar seta direita  | 21 | IN |  
+| `CC_RES` - Comando de Cruise Control  | 13 | IN |  
+| `CC_CANCEL` - Comando de Cancelar Cruise Control  | 0 | IN |  
 
 <br>
 <br>
