@@ -154,33 +154,27 @@ Direção do Motor:
 ## 7. Critérios de Avaliação
 
 ### Entrega:
-<!-- 
-- Repositório (no Github Classroom) incluindo o README com as instruções de execução (Para projetos em C/C++ é necessário incluir o Makefile);  
-- Vídeo com duração entre 5 min e 10 min mostrando o sistema em funcionamento (Mostrando o funcionamento em si e destacar partes do código fonte mais importantes).   -->
 
-<!-- A avaliação será realizada seguindo os seguintes critérios:
+- Código-fonte bem documentado.
+- Arquivo README.md explicando como compilar e executar o programa.  
+- Vídeo demonstrando o programa em funcionamento e comentando a arquitetura da solução.  
+- Relatório explicando as decisões de design e como os conceitos de POSIX foram aplicados.
 
-|   ITEM    |   COMENTÁRIO  |   VALOR   |
-|------------------------|---------------------------------------------------------------------------------------------------------|---------|
-|**Implementação do controlador PID** | Correta implementação do controlador PID (motor PWM), incluindo a leitura do encoder e acionamento da direção dos motores, correto posicionamento dos elevadores nos andares (ao parar no andar, o sinal do sensor do andar deve acender). |    2,0 |
-|**Menu de controle**        | Correta leitura e acionamento de eventos baseados nos comandos dos usuários por meio dos botões no dashboard. | 1,5 |
-|**Leitura da Temperatura Ambiente**| Leitura dos valores de Temperatura Ambiente (Sensor BMP280). | 0,5 |
-|**Comunicação UART** | Leitura do encoder, botões e envio de temperatura e do sinal de controle através da comunicação MODBUS-UART. | 2,0 |
-|**Mostrador no LCD**        | Apresentação do funcionamento do elecador menu no LCD incluindo o estado atual e a temperatura ambiente. | 1,0 |
-|**Qualidade do Código**     | Utilização de boas práticas como o uso de bons nomes, modularização e organização em geral.    |  2,0 |
-|**README com Experimento** | Documentação README com instruçoes de compilação, de uso e relatório do experimento com o gráfico e vídeo. |  1,0 |
-|**Pontuação Extra**         |   Qualidade e usabilidade acima da média.  |  0,5   | -->
+### Critérios de Avaliação:
+1.	Correção e funcionalidade do programa (50%).
+2.	Uso correto dos conceitos do POSIX e do acionamento das GPIOs, controle de prioridades (30%).
+3.	Organização e clareza do código e da documentação (10%).
+4.	Testes e validação do programa com diferentes cenários (10%).
 
 ## 8. Referências
 
+[Códigos de Exemplo GPIO](https://gitlab.com/fse_fga/raspberry-pi/gpio-raspberry-pi)   
+[Códigos de Exemplo GPIO - eLinux](https://elinux.org/RPi_GPIO_Code_Samples)  
+[Biblioteca BCM2835 - GPIO](http://www.airspayce.com/mikem/bcm2835/)  
+[Biblioteca WiringPi GPIO](https://github.com/WiringPi/WiringPi)  
+[SoftPWM via WiringPi](https://github.com/WiringPi/WiringPi/blob/master/examples/softPwm.c)  
 [Controle Liga/Desliga - Wikipedia](https://pt.wikipedia.org/wiki/Controle_liga-desliga)  
 [Controle PID - Wikipedia](https://pt.wikipedia.org/wiki/Controlador_proporcional_integral_derivativo)  
-[Driver da Bosh para o sensor BMP280](https://github.com/BoschSensortec/BMP2-Sensor-API/)  
-[Biblioteca BCM2835 - GPIO](http://www.airspayce.com/mikem/bcm2835/)  
-[Controle do OLED 128x64 Python](https://www.instructables.com/Raspberry-Pi-Monitoring-System-Via-OLED-Display-Mo/)
-[Controle do OLED 128x64 C/C++](https://github.com/gavinlyonsrepo/SSD1306_OLED_RPI)  
-[Biblioteca WiringPi GPIO](http://wiringpi.com)  
-[PWM via WiringPi](https://www.electronicwings.com/raspberry-pi/raspberry-pi-pwm-generation-using-python-and-c)
 
 
 
