@@ -126,7 +126,7 @@ Os sistema de controle possui os seguintes requisitos:
 
 ### Links dos Dashboards
 
-<!-- [Carro 1]()   -->
+[Carro 11](http://thingsboard.lappis.rocks:443/dashboard/532793d0-c399-11ef-a76e-198e90f74020?publicId=ba042a80-0322-11ed-9f25-414fbaf2b065)    
 
 <!-- ## 6. Parâmetros de PID
 
@@ -151,7 +151,7 @@ Direção do Motor:
 | **Andar de marcha ré**  | 0 | 1 |  
 | **Freio** | 1 | 1 |  
 
-## 7. Critérios de Avaliação
+## 5. Critérios de Avaliação
 
 ### Entrega:
 
@@ -166,7 +166,7 @@ Direção do Motor:
 3.	Organização e clareza do código e da documentação (10%).
 4.	Testes e validação do programa com diferentes cenários (10%).
 
-## 8. Referências
+## 6. Referências
 
 [Códigos de Exemplo GPIO](https://gitlab.com/fse_fga/raspberry-pi/gpio-raspberry-pi)   
 [Códigos de Exemplo GPIO - eLinux](https://elinux.org/RPi_GPIO_Code_Samples)  
